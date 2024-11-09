@@ -70,4 +70,111 @@ body{
     background-position: center;
     background-color: black;
 }
+
+.op-interacao{
+    font-size: 50px;
+}
+
+.seta{
+    display:none;  
+}
   
+.container-opc{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    border: 2px solid red;
+    outline: 4px solid black;
+}
+
+.container-interacao{
+    display: grid;
+    grid-template-rows:repeat(1, auto); 
+    grid-template-columns: repeat(2, 1fr);
+}
+.container-texto{
+    background-color: #fff;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border: 10px solid #c9ab51;
+}
+.texto{
+    background-color: #1d3c54;
+    border: 5px solid #fff;
+    height: 100%;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.container-interacao{
+    background-color: black;
+    border: 4px black solid;
+}
+.container-interacao :nth-child(even){
+    background-color: #fff;
+}
+.status-oponente{
+    background-color: #f8f8d9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "col1 col2"
+    "col3 col3"
+    ;
+    gap: 10px;
+}
+.nomePkmAd{
+    grid-area: col1;
+    font-size: 40px;
+}
+.nivelPkmAd{
+    grid-area: col2;
+    font-size: 35px;
+}
+.vidaPkmAd{
+    grid-area: col3;
+    font-size: 40px;
+}
+.status-oponente{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 25%;
+    border: 5px solid black;
+    position: relative;
+    top: 60px;
+    left: 250px;        
+}
+
+.status-jogador{
+    background-color: #f8f8d9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "col1 col2"
+    "col3 col3"
+    ;
+    gap: 10px;
+}
+.nomePkmJ{
+    grid-area: col1;
+    font-size: 40px;
+}
+.nivelPkmJ{
+    grid-area: col2;
+    font-size: 35px;
+}
+.vidaPkmJ{
+    grid-area: col3;
+    font-size: 40px;
+}
+.status-jogador{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 25%;
+    border: 5px solid black;
+    position: relative;
+    top: 250px;
+    left: 730px;        
+}
