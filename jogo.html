@@ -11,58 +11,71 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container-jogo">
-        <div class="container-gameplay">
-            <div class="container-oponente">
-                <div class="status-oponente">
-                    <div class="nomePkmAd font">Teste Nome</div>
-                    <div class="nivelPkmAd font">LvTeste</div>
-                    <div class="vidaPkmAd font">vida</div>
-                </div>
-                <div class="pkm-oponente">
+    <div class="tela">
+        <div class="container-jogo">
+            <div class="container-gameplay">
+                <div class="container-oponente">
+                    <div class="status-oponente">
+                        <div class="nomePkmAd font">Teste Nome</div>
+                        <div class="nivelPkmAd font">LvTeste</div>
+                        <div class="vidaPkmAd font">
+                            <div class="vidaPkmOponente" id="vidaPkmOponente"></div>
+                        </div>
+                    </div>
+                    <div class="pkm-oponente">
 
+                    </div>
+                </div>
+                <div class="container-jogador">
+                    <div class="pkm-jogador">
+
+                    </div>
+                    <div class="status-jogador">   
+                        <div class="nomePkmJ font">Teste Nome</div>
+                        <div class="nivelPkmJ font">LvTeste</div>
+                        <div class="vidaPkmJ font">vida</div>                 
+                    </div>
                 </div>
             </div>
-            <div class="container-jogador">
-                <div class="pkm-jogador">
-
+            <div class="container-interacao">
+                <div class="container-texto">
+                    <div class="texto"></div>
                 </div>
-                <div class="status-jogador">   
-                    <div class="nomePkmJ font">Teste Nome</div>
-                    <div class="nivelPkmJ font">LvTeste</div>
-                    <div class="vidaPkmJ font">vida</div>                 
+                <div class="container-opc">
+                    <div class="setaLuta">
+                        <img src="assets/img/arrowrRight.png" id="setaLuta" class="seta">
+                    </div>
+                    <div class="luta">
+                        <p class="font op-interacao" onmouseover="setaa()" onmouseout="setae()" onclick="ataque()">FIGHT</p>
+                    </div>
+                    <div class="setaBag">
+                        <img src="assets/img/arrowrRight.png" id="setaLuta" class="seta">
+                    </div>
+                    <div class="bag">
+                        <p class="font op-interacao" onmouseover="setaa()" onmouseout="setae()">BAG</p>
+                    </div>
+                    <div class="setaPokemon">
+                        <img src="assets/img/arrowrRight.png" id="setaLuta" class="seta">
+                    </div>
+                    <div class="pokemon">
+                        <p class="font op-interacao" onmouseover="setaa()" onmouseout="setae()">POKéMON</p>
+                    </div>
+                    <div class="setaRun">
+                        <img src="assets/img/arrowrRight.png" id="setaLuta" class="seta">
+                    </div>
+                    <div class="run">
+                        <p class="font op-interacao" onmouseover="setaa()" onmouseout="setae()">RUN</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container-interacao">
-            <div class="container-texto">
-                <div class="texto"></div>
-            </div>
-            <div class="container-opc">
-                <div class="setaLuta">
-                    <img src="assets/img/arrowrRight.png" id="setaLuta" class="seta">
-                </div>
-                <div class="luta">
-                    <p class="font op-interacao" onmouseover="setaa()" onmouseout="setae()">FIGHT</p>
-                </div>
-                <div class="setaBag">
-                    <img src="assets/img/arrowrRight.png" id="setaLuta" class="seta">
-                </div>
-                <div class="bag">
-                    <p class="font op-interacao" onmouseover="setaa()" onmouseout="setae()">BAG</p>
-                </div>
-                <div class="setaPokemon">
-                    <img src="assets/img/arrowrRight.png" id="setaLuta" class="seta">
-                </div>
-                <div class="pokemon">
-                    <p class="font op-interacao" onmouseover="setaa()" onmouseout="setae()">POKéMON</p>
-                </div>
-                <div class="setaRun">
-                    <img src="assets/img/arrowrRight.png" id="setaLuta" class="seta">
-                </div>
-                <div class="run">
-                    <p class="font op-interacao" onmouseover="setaa()" onmouseout="setae()">RUN</p>
-                </div>
+
+        <div class="ataqueJogador" id="ataqueJogador">
+            <div class="ataqueOp">
+                <button onclick="ataque1()">Ataque 1</button>
+                <button onclick="ataque2()">Ataque 2</button>
+                <button onclick="ataque3()">Ataque 3</button>
+                <button onclick="ataque4()">Ataque 4</button>
             </div>
         </div>
     </div>
