@@ -4,53 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="indexPg">
         <div class="bloco">
             <div class="grid-container">
             <!-- pkm 1 inicio -->
             <div class="btn-container">
-                <img src="assets/img/150.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/150.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="mewtowJogador()">
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 1 fim -->
             <!-- pkm 2 inicio -->
             <div class="btn-container">
-                <img src="assets/img/197.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/197.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="umbreonJogador()">
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 2 fim -->
             <!-- pkm 3 inicio -->
             <div class="btn-container">
-                <img src="assets/img/370.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/370.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="ludvickJogador()">
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 3 fim -->
             <!-- pkm 4 inicio -->
             <div class="btn-container">
-                <img src="assets/img/4.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/4.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="chamrmanderJogador()">
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 4 fim -->
             <!-- pkm 5 inicio -->
             <div class="btn-container">
-                <img src="assets/img/448.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/448.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="lucarioJogador()">
                 </button>
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 5 fim -->
             <!-- pkm 6 inicio -->
             <div class="btn-container">
-                <img src="assets/img/823.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/823.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="corvikinightJogador()">
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 6 fim -->
             <!-- pkm 7 inicio -->
             <div class="btn-container">
-                <img src="assets/img/865.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/865.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="sirfetchJogador()">
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 7 fim -->
@@ -62,50 +65,119 @@
             <div class="grid-container">
             <!-- pkm 1 inicio -->
             <div class="btn-container">
-                <img src="assets/img/150.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/150.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="mewtowOponente()">
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 1 fim -->
             <!-- pkm 2 inicio -->
             <div class="btn-container">
-                <img src="assets/img/197.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/197.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="umbreonOponente()">
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 2 fim -->
             <!-- pkm 3 inicio -->
             <div class="btn-container">
-                <img src="assets/img/370.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/370.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="ludvickOponente()">
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 3 fim -->
             <!-- pkm 4 inicio -->
             <div class="btn-container">
-                <img src="assets/img/4.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/4.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="chamrmanderOponente()">
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 4 fim -->
             <!-- pkm 5 inicio -->
             <div class="btn-container">
-                <img src="assets/img/448.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/448.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="lucarioOponente()">
                 </button>
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 5 fim -->
             <!-- pkm 6 inicio -->
             <div class="btn-container">
-                <img src="assets/img/823.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/823.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="corvikinightOponente()">
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 6 fim -->
             <!-- pkm 7 inicio -->
             <div class="btn-container">
-                <img src="assets/img/865.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)">
+                <img src="assets/img/865.png" class='pkmImg' onmouseover="showIncon(this)" onmouseout="hideIcon(this)" onclick="sirfetchOponente()">
                 <img src="assets/img/arrowup.png" alt="" class="icon">
             </div>
             <!-- pkm 7 fim -->
         </div>
         </div>
     </div>
-<span style="position:absolute;top:100%;right:0;transform:translate(0,-100%); color:rgba(0,0,0,0.1)" >PH Esteve aqui</span>
+
+    <div class="tela" id="tela">
+        <div class="container-jogo">
+            <div class="container-gameplay">
+                <div class="container-oponente">
+                    <div class="status-oponente">
+                        <div class="nomePkmAd font">Teste Nome</div>
+                        <div class="nivelPkmAd font">LvTeste</div>
+                        <div class="vidaPkmAd font">
+                            <div class="vidaPkmOponente" id="vidaPkmOponente"></div>
+                        </div>
+                    </div>
+                    <div class="pkm-oponente">
+                        <img src="" alt="pokemon oponente" id="oponente">
+                    </div>
+                </div>
+                <div class="container-jogador">
+                    <div class="pkm-jogador">
+                        <img src="" alt="pokemon jogador" id="jogador">
+                    </div>
+                    <div class="status-jogador">   
+                        <div class="nomePkmJ font">Teste Nome</div>
+                        <div class="nivelPkmJ font">LvTeste</div>
+                        <div class="vidaPkmJ font">vida</div>                 
+                    </div>
+                </div>
+            </div>
+            <div class="container-interacao">
+                <div class="container-texto">
+                    <div class="texto"></div>
+                </div>
+                <div class="container-opc">
+                    <div class="setaLuta">
+                        <img src="assets/img/arrowrRight.png" id="setaLuta" class="seta">
+                    </div>
+                    <div class="luta">
+                        <p class="font op-interacao" onmouseover="setaa()" onmouseout="setae()" onclick="ataque()">FIGHT</p>
+                    </div>
+                    <div class="setaBag">
+                        <img src="assets/img/arrowrRight.png" id="setaLuta" class="seta">
+                    </div>
+                    <div class="bag">
+                        <p class="font op-interacao" onmouseover="setaa()" onmouseout="setae()">BAG</p>
+                    </div>
+                    <div class="setaPokemon">
+                        <img src="assets/img/arrowrRight.png" id="setaLuta" class="seta">
+                    </div>
+                    <div class="pokemon">
+                        <p class="font op-interacao" onmouseover="setaa()" onmouseout="setae()">POKéMON</p>
+                    </div>
+                    <div class="setaRun">
+                        <img src="assets/img/arrowrRight.png" id="setaLuta" class="seta">
+                    </div>
+                    <div class="run">
+                        <p class="font op-interacao" onmouseover="setaa()" onmouseout="setae()">RUN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ataqueJogador" id="ataqueJogador">
+            <div class="ataqueOp">
+                <button onclick="ataque1()">Ataque 1</button>
+                <button onclick="ataque2()">Ataque 2</button>
+                <button onclick="ataque3()">Ataque 3</button>
+                <button onclick="ataque4()">Ataque 4</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

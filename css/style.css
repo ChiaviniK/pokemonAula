@@ -242,3 +242,17 @@ body{
     margin: 5px;
     border-radius: 5px;
 }
+
+.tela{
+    display: none;
+}
+.pkm-oponente{
+    position: relative;
+    left: 775px;
+    top:75px
+}
+.pkm-jogador{
+    position: relative;
+    left: 300px;
+    top:125px;
+}
